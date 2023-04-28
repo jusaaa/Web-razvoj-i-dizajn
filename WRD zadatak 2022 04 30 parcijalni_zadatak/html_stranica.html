@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> HTML5/CSS3 website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="pixelhint.com - modified FIT">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section class="billboard light">
+    <header class="wrapper light">
+      
+        <img class="logo" src="slike/your-logo-here.png" alt=""/>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">Journal</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="caption">
+        <h1>Sunt In Culpa Officia Deserunt</h1>
+        <p>dolore magna aliqua enim ad minim veniam occaecat</p>
+        <hr>
+    </div>
+</section><!--  End billboard  -->
+
+
+<section class="services-wrapper">
+    <ul class="clearfix">
+        <li class="sivi-box">
+            <div class="slika-div" style="background-image: url('slike/mountain_climbing.png')" alt=""></div>
+           
+            <h3>Officia Deserunt Mollit</h3>
+            <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua voluptate velit esse
+                cillum dolore.</p>
+        </li>
+        <li class="sivi-box" >
+            <div class="slika-div" style="background-image: url('slike/snowboarding.png')" alt=""></div>
+           
+            <h3>Culpa Killum Dolore</h3>
+            <p>aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </li>
+        <li class="sivi-box" >
+            <div class="slika-div" style="background-image: url('slike/skiing1.jpg')" alt=""></div>
+            <h3>Elit Tempor Incididunt</h3>
+            <p>nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat enim ad minim veniam.</p>
+        </li>
+
+        <li class="sivi-box">
+            <div class="slika-div" style="background-image: url('slike/mountain_climbing.png')" alt=""></div>
+           
+            <h3>Officia Deserunt Mollit</h3>
+            <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua voluptate velit esse
+                cillum dolore.</p>
+        </li>
+    </ul>
+</section><!--  End services  -->
+<section class="mountain-img">
+</section>
+<div class="title">
+    <h2>Testimonials</h2>
+    <h3 id="clients-says">what clients are saying about us</h3>
+    <hr class="separator"/>
+</div>
+<section  class="testimonials wrapper">
+
+    <ul class="clearfix">
+        <li class="sivi-box"  id="okvir1">
+            <h4 style="cursor: pointer;" onclick="selektuj1()">John Doe</h4>
+            <h5>CEO</h5>
+            <div   class="slika-div" style="background-image: url('slike/john.jpg')" alt=""></div>
+           <p>Dolor sit amet consectetur isicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam quis nostrud laboris.
+            </p>
+        </li>
+        <li class="sivi-box"  id="okvir2" >
+            <h4 style="cursor: pointer;" onclick="selektuj2()">Alex Martin</h4>
+            <h5>UI Designer</h5>
+            
+            <div  class="slika-div" style="background-image: url('slike/alex.jpg')" alt=""></div>
+            <p>Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam sunt in culpa officia deserunt mollit anim laborum sint occaecat.
+            </p>
+          
+        </li>
+        <li class="sivi-box"  id="okvir3">
+            <h4 style="cursor: pointer;" onclick="selektuj3()">Andrew Doe</h4>
+            <h5>Developer</h5>
+          
+            <div class="slika-div" style="background-image: url('slike/alex.jpg')" alt=""></div>
+            <p>Aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse slum dolore eu fugiat nulla pariatursint occaecat.
+            </p>
+         
+        </li>
+
+        <li class="sivi-box"  id="okvir4" >
+            <h4 style="cursor: pointer;" onclick="selektuj4()">Josh Lind</h4>
+            <h5>Developer</h5>
+             <div class="slika-div" style="background-image: url('slike/john.jpg')" alt=""></div>
+             <p>Dolor sit amet consectetur isicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam quis nostrud laboris.
+            </p>
+      
+        </li>
+    </ul>
+</section><!--  End testimonials  -->
+
+
+
+
+<footer>
+    <div class="wrapper-last">
+        <div class="rights">
+            <p>© Sublime. All Rights Reserved 2014 - More Free Templates at <a href="http://pixelhint.com" target="_blank">Pixelhint.com</a></p>
+        </div>
+    </div>
+</footer><!--  End footer  -->
+</body>
+
+<script>
+    let okvir1=document.getElementById("okvir1");
+    let okvir2=document.getElementById("okvir2");
+    let okvir3=document.getElementById("okvir3");
+    let okvir4=document.getElementById("okvir4");
+
+
+    function selektuj1()
+    {
+        okvir1.style.borderColor="red";
+        okvir2.style.borderColor="white";
+        okvir3.style.borderColor="white";
+        okvir4.style.borderColor="white";
+    }
+
+    function selektuj2()
+    {
+        okvir2.style.borderColor="red";
+        okvir1.style.borderColor="white";
+        okvir3.style.borderColor="white";
+        okvir4.style.borderColor="white";
+    }
+
+    function selektuj3()
+    {
+        okvir3.style.borderColor="red";
+        okvir1.style.borderColor="white";
+        okvir2.style.borderColor="white";
+        okvir4.style.borderColor="white";
+    }
+
+    function selektuj4()
+    {
+        okvir4.style.borderColor="red";
+        okvir1.style.borderColor="white";
+        okvir2.style.borderColor="white";
+        okvir3.style.borderColor="white";
+    }
+</script>
+</html>

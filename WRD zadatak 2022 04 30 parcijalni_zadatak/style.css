@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.billboard{
+    background-image: url(slike/respons-header.jpg);
+    background-size: cover;
+    height: 650px;
+}
+.logo{
+    height: 100px;
+    width: 150px;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+.wrapper{
+    display: flex;
+}
+nav{
+    text-align: right;
+    padding-top: 4%;
+    padding-left: 55%;
+}
+nav li{
+    display: inline;
+    padding: 7px;
+    background-color: rgb(128, 212, 255);
+    border: 1px solid rgba(147, 210, 255, 0.742);
+    border-radius: 5px;
+}
+nav li a{
+    color: #000;
+    text-decoration: none;
+}
+.caption{
+   padding-left: 4%;
+   padding-top: 5%;
+   font-size: 30px;
+   background-color: rgba(230, 230, 230, 0.451);
+}
+.caption h1{
+    font-weight: 400;
+}
+.caption p{
+    padding-top: 4%;
+    font-size: 20px;
+}
+.services-wrapper{
+    margin-left: 2%;
+    margin-top: 3%;
+    padding-bottom: 3%;
+}
+.clearfix{
+    display: flex;
+    margin-right: 40px;
+}
+.sivi-box div{
+    height: 200px;
+    max-width: 200px;
+    background-size: cover;
+}
+.sivi-box{
+    border: 1px solid rgba(109, 109, 109, 0.214);
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    list-style: none;
+    background-color: rgb(243, 243, 243);
+}
+.sivi-box h3{
+    padding-top: 3%;
+    font-size: 18px;
+}
+.sivi-box p{
+    margin-top: 3%;
+}
+.slika-div{
+    margin: auto;
+}
+.sivi-box ul li{
+    list-style: none;
+}
+.mountain-img{
+    background: url(slike/mountain-img.jpg);
+    background-size: cover;
+    height: 700px;
+    background-repeat: no-repeat;
+}
+.title{
+    margin: auto;
+    text-align: center;
+    margin-top: 5%;
+}
+.title hr{
+    width: 200px;
+    margin: auto;
+    margin-top: 1%;
+}
+.title h3{
+    margin-top: 2%;
+    color: rgb(131, 131, 131);
+}
+.testimonials .clearfix{
+    margin: auto;
+    margin-top: 2%;
+}
+.testimonials h4{
+    background-color: black;
+    height: 30px;
+    color: white;
+    margin: auto;
+    padding-top: 5px;
+}
+.testimonials h5{
+    padding-top: 10px;
+}
+footer{
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+@media only screen and (max-width:600px){
+    .wrapper{
+        display: block;
+    }
+    .logo{
+        margin-left: 35%;
+        margin-top: 10%;
+    }
+    nav{
+        padding: 0;
+    }
+    nav li{
+        display: block;
+        border-top:none;
+        border-left: none;
+        border-right: none; 
+        background-color: rgba(255, 255, 255, 30%);
+        border-radius: 0;
+        margin: 0;
+        text-align: center;
+    }
+    .sivi-box{
+        width: 40%;
+        margin-top: 5%;
+    }
+    .clearfix{
+        display:flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-left: 7%;
+    }
+    .testimonials .clearfix{
+        margin-left: 10%;
+        margin-top: 5%;
+    }
+}
